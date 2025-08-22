@@ -4,9 +4,9 @@ spring:
     profiles:
       active: dev
     datasource:
-      url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/chat_app}
-      username: ${DB_USER:root}
-      password: ${DB_PASSWORD:admin}
+      url: jdbc:postgresql://dpg-d2k33k6mcj7s739r5n8g-a.oregon-postgres.render.com:5432/chat_app_0auk
+      username: root
+      password: mTodzaJU7q2B80sDJxxYUIuFg3Hxo5fD
       driver-class-name: org.postgresql.Driver
 
     jpa:
