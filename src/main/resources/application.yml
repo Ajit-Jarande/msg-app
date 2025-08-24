@@ -1,27 +1,20 @@
 spring:
     application:
         name: msg-app
-    profiles:
-      active: dev
     datasource:
-      url: jdbc:postgresql://dpg-d2k33k6mcj7s739r5n8g-a.oregon-postgres.render.com:5432/chat_app_0auk
+      url: jdbc:mysql://localhost:3306/chat_app?createDatabaseIfNotExist=true
       username: root
-      password: mTodzaJU7q2B80sDJxxYUIuFg3Hxo5fD
-      driver-class-name: org.postgresql.Driver
-
-    jpa:
-      hibernate:
-        ddl-auto: update
-      show-sql: true
-springdoc:
-  swagger-ui:
-    path: /swagger
-server:
-  port: 8081
-logging:
-  level:
-    org.hibernate.SQL: DEBUG
-    org.hibernate.type.descriptor.sql: TRACE
-
-
-
+      password: admin
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jpa:
+        hibernate:
+          ddl-auto: update
+        show-sql: true
+    springdoc:
+      swagger-ui:
+        path: /swagger
+    server:
+      port: 8081
+    logging:
+      level:
+        root: DEBUG
