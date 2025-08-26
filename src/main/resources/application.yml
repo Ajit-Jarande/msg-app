@@ -2,10 +2,10 @@ spring:
     application:
         name: msg-app
     datasource:
-      url: jdbc:mysql://localhost:3306/messaging_app?createDatabaseIfNotExist=true
-      username: root
-      password: admin
-      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:postgresql://dpg-d2m797fdiees73cl5g7g-a.oregon-postgres.render.com:5432/chat_app_io0d
+      username: chat_app_io0d_user
+      password: wdwLO7HNZatUJFpgriDLq3WXtAnE0ODb
+      driver-class-name: org.postgresql.Driver
     jpa:
       hibernate:
         ddl-auto: update
